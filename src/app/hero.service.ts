@@ -21,7 +21,6 @@ export class HeroService {
     private heroesUrl = 'api/heroes';  // URL to web api
     // of(HEROES) returns an Observable<Hero[]> that emits a single value, the array of mock heroes.
   /** GET heroes from the server */
-  /** GET heroes from the server */
 getHeroes(): Observable<Hero[]> {
   return this.http.get<Hero[]>(this.heroesUrl)
     .pipe(
